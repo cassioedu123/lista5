@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert Downey Jr.</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+    }
+
+    .faixa {
+      background-image: url('homem1.jpg');
+      width: 10%;
+      background-repeat: repeat;
+    }
+
+    .conteudo {
+      width: 80%;
+      background-color: #fff;
+      padding: 40px;
+    }
+
+    .layout {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .cabecalho img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .principal {
+      display: flex;
+    }
+
+    h1 {
+      color: #f7931e;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    h2 {
+      color: #f7931e;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .imagem-centro {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .imagem-centro img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .principal {
+        flex-direction: column;
+      }
+
+      .faixa {
+        display: none;
+      }
+
+      .conteudo {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="cabecalho">
+      <img src="homem1.jpg" alt="Robert Downey Jr." />
+    </div>
+
+    <div class="principal">
+      <div class="faixa"></div>
+
+      <div class="conteudo">
+        <h1>Robert Downey Jr.</h1>
+        <p>
+          Robert Downey Jr. é um dos atores mais influentes e carismáticos de sua geração. Sua carreira teve altos e baixos, mas ele conquistou o mundo ao interpretar Tony Stark, o Homem de Ferro, no Universo Cinematográfico da Marvel.
+        </p>
+        <p>
+          Nascido em 1965, Robert começou sua carreira ainda jovem, influenciado pelo pai, cineasta Robert Downey Sr. Apesar de problemas pessoais durante os anos 90, ele deu a volta por cima e se transformou em um ícone do cinema moderno.
+        </p>
+
+        <div class="imagem-centro">
+          <img src="homem1.jpg" alt="Marvel Comics Logo" />
+        </div>
+
+        <h2>Reconhecimento</h2>
+        <p>
+          Downey Jr. recebeu diversos prêmios e indicações, incluindo uma indicação ao Oscar por seu papel em "Chaplin". Além disso, ajudou a moldar o sucesso da Marvel nos cinemas com sua atuação marcante.
+        </p>
+
+        <h2>Legado</h2>
+        <p>
+          Fora das telas, Robert é reconhecido por sua jornada de superação e envolvimento com projetos sociais e ambientais. Seu trabalho como ator e produtor continua a impactar positivamente a indústria do entretenimento.
+        </p>
+      </div>
+
+      <div class="faixa"></div>
+    </div>
+  </div>
+</body>
+</html>
